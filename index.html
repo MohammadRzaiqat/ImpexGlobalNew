@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<!-- lang="en" and dir="ltr" will be set by JavaScript -->
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IMPEX GLOBAL - Your trusted partner for industrial, equipment, and automotive solutions. Global reach, premium quality, expert support.">
+    <title>IMPEX GLOBAL</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%237c3aed'/%3E%3Cstop offset='100%25' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='50' height='50' rx='10' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' font-family='Inter, sans-serif' font-size='28' font-weight='900' fill='%23FFFFFF' text-anchor='middle' dominant-baseline='central'%3EIG%3C/text%3E%3C/svg%3E">    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add fonts that support Arabic/Turkish -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Noto+Sans+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ============================================
+     DESKTOP UTILITY CONTROLS (THEME & LANGUAGE)
+     ============================================ -->
+    <div class="utility-container" id="desktop-utility-container">
+        <!-- Language Switcher -->
+        <div class="lang-switcher">
+            <button class="lang-btn" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-globe"></i>
+                <span class="current-lang-display">EN</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="lang-dropdown" role="menu">
+                <a href="#" class="lang-option" data-lang="en" role="menuitem">
+                    <span class="lang-name">English (EN)</span>
+                    <i class="fas fa-check"></i>
+                </a>
+                <a href="#" class="lang-option" data-lang="tr" role="menuitem">
+                    <span class="lang-name">Türkçe (TR)</span>
+                    <i class="fas fa-check"></i>
+                </a>
+                <a href="#" class="lang-option" data-lang="ar" role="menuitem">
+                    <span class="lang-name">العربية (AR)</span>
+                    <i class="fas fa-check"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Theme Switch -->
+        <label class="theme-switch" for="theme-toggle" title="Toggle theme">
+            <input type="checkbox" class="theme-toggle-input" id="theme-toggle">
+            <span class="slider">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </span>
+        </label>
+    </div>
+
+    <!-- ============================================
+     MOBILE SIDEBAR & OVERLAY
+     ============================================ -->
+    <div class="sidebar-overlay"></div>
+    <aside class="sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <span class="logo-icon">IG</span>
+                IMPEX GLOBAL
+            </a>
+            <button class="sidebar-close-btn" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content">
+            <!-- Mobile Navigation -->
+            <nav class="sidebar-nav">
+                <a href="#home" class="nav-link" data-key="navHome">Home</a>
+                <a href="#features" class="nav-link" data-key="navFeatures">Features</a>
+                <a href="#vision-mission" class="nav-link" data-key="navVisionMission">Vision & Mission</a>
+                <a href="#products" class="nav-link" data-key="navProducts">Products</a>
+                <a href="#contact" class="nav-link" data-key="navContact">Contact Us</a>
+            </nav>
+
+            <div class="sidebar-controls">
+                <!-- Mobile Language Switcher -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" aria-label="Select language" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang-display">EN</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="lang-dropdown" role="menu">
+                        <a href="#" class="lang-option" data-lang="en" role="menuitem">
+                            <span class="lang-name">English (EN)</span>
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="#" class="lang-option" data-lang="tr" role="menuitem">
+                            <span class="lang-name">Türkçe (TR)</span>
+                            <i class="fas fa-check"></i>
+                        </a>
+                        <a href="#" class="lang-option" data-lang="ar" role="menuitem">
+                            <span class="lang-name">العربية (AR)</span>
+                            <i class="fas fa-check"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Mobile Theme Switch -->
+                <label class="theme-switch" for="mobile-theme-toggle" title="Toggle theme">
+                    <span class="theme-label" data-key="themeToggleLabel">Theme</span>
+                    <input type="checkbox" class="theme-toggle-input" id="mobile-theme-toggle">
+                    <span class="slider">
+                        <i class="fas fa-sun"></i>
+                        <i class="fas fa-moon"></i>
+                    </span>
+                </label>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- ============================================
+     MAIN PAGE CONTENT
+     ============================================ -->
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">IG</span>
+                IMPEX GLOBAL
+            </a>
+            
+            <div class="nav-desktop-links">
+                <a href="#home" class="nav-link" data-key="navHome">Home</a>
+                <a href="#features" class="nav-link" data-key="navFeatures">Features</a>
+                <a href="#vision-mission" class="nav-link" data-key="navVisionMission">Vision & Mission</a>
+                <a href="#products" class="nav-link" data-key="navProducts">Products</a>
+                <a href="#contact" class="nav-link" data-key="navContact">Contact Us</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="btn btn-primary nav-exports-btn">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-key="navExportsImports">Exports / Imports</span>
+                </button>
+                <!-- Mobile Menu Button will be injected by JS -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate-fade-in" data-key="heroTitle">Building the Future with Automotive and Industrial Solutions</h1>
+            <p class="animate-fade-in animate-delay-1" data-key="heroSubtitle">Your trusted partner in high-quality machine parts and automotive solutions</p>
+            <div class="btn-container animate-fade-in animate-delay-2"> <!-- Apply animation to container -->
+                <a href="#features"> <!-- Correct href -->
+                    <button class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        <span data-key="heroBtnGetStarted">Get Started</span>
+                    </button>
+                </a>
+                <a href="#products"> <!-- Correct href -->
+                    <button class="btn btn-outline">
+                        <i class="fas fa-info-circle"></i>
+                        <span data-key="heroBtnBrowseProducts">Browse Products</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="featuresTitle">Why Choose Us</h2>
+                <p data-key="featuresSubtitle">We deliver excellence through quality, reliability, and global reach</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 data-key="feature1Title">Global Network</h3>
+                    <p data-key="feature1Desc">Extensive distribution network covering major industrial hubs, ensuring timely delivery and local support.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 data-key="feature2Title">Quality Assured</h3>
+                    <p data-key="feature2Desc">Certified quality management system ensuring premium grade products that meet international standards.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3 data-key="feature3Title">Expert Support</h3>
+                    <p data-key="feature3Desc">24/7 technical support from experienced individuals in case of any customer inquiry.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision-mission" class="vision-mission">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="vmTitle">Vision & Mission</h2>
+                <p data-key="vmSubtitle">Driving innovation and excellence in industrial solutions</p>
+            </div>
+            <div class="vision-mission-grid">
+                <div class="vm-card vision">
+                    <div class="vm-image">
+                        <img src="pexels-photo-209251.jpeg" alt="Vision" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/aaaaaa?text=Vision+Img';">
+                    </div>
+                    <div class="vm-content">
+                        <h3><i class="fas fa-eye"></i> <span data-key="visionTitle">Our Vision</span></h3>
+                        <p data-key="visionDesc">To be the global leader in providing innovative industrial and automotive solutions, setting new standards for quality and customer satisfaction.</p>
+                        <ul class="vm-points">
+                            <li><i class="fas fa-check-circle"></i><span data-key="visionPoint1">Global Market Leadership</span></li>
+                            <li><i class="fas fa-check-circle"></i><span data-key="visionPoint2">Innovation Excellence</span></li>
+                            <li><i class="fas fa-check-circle"></i><span data-key="visionPoint3">Sustainable Growth</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vm-card mission">
+                    <div class="vm-image">
+                        <img src="pexels-photo-221047.jpeg" alt="Mission" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/aaaaaa?text=Mission+Img';">
+                    </div>
+                    <div class="vm-content">
+                        <h3><i class="fas fa-bullseye"></i> <span data-key="missionTitle">Our Mission</span></h3>
+                        <p data-key="missionDesc">To deliver exceptional value to our customers through high-quality products, innovative solutions, and outstanding service.</p>
+                        <ul class="vm-points">
+                            <li><i class="fas fa-check-circle"></i><span data-key="missionPoint1">Customer Success</span></li>
+                            <li><i class="fas fa-check-circle"></i><span data-key="missionPoint2">Quality Excellence</span></li>
+                            <li><i class="fas fa-check-circle"></i><span data-key="missionPoint3">Continuous Innovation</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Values Section -->
+    <section id="values" class="values">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="valuesTitle">Our Core Values</h2>
+                <p data-key="valuesSubtitle">The principles that guide our business</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <i class="fas fa-heart"></i>
+                    <h3 data-key="value1Title">Integrity</h3>
+                    <p data-key="value1Desc">We conduct business with the highest ethical standards and transparency.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3 data-key="value2Title">Partnership</h3>
+                    <p data-key="value2Desc">We build long-lasting relationships with our customers and suppliers.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3 data-key="value3Title">Innovation</h3>
+                    <p data-key="value3Desc">We constantly seek new ways to improve and deliver better solutions.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-users"></i>
+                    <h3 data-key="value4Title">Excellence</h3>
+                    <p data-key="value4Desc">We strive for excellence in everything we do.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="timelineTitle">Our Journey</h2>
+                <p data-key="timelineSubtitle">Milestones that define our growth</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2019</h3>
+                        <p data-key="timeline1Title">Company Founded</p>
+                        <small data-key="timeline1Desc">Started operations in Istanbul</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2020</h3>
+                        <p data-key="timeline2Title">Market Expansion</p>
+                        <small data-key="timeline2Desc">Entered international markets</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2022</h3>
+                        <p data-key="timeline3Title">Product Innovation</p>
+                        <small data-key="timeline3Desc">Launched new product lines</small>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2024</h3>
+                        <p data-key="timeline4Title">Global Recognition</p>
+                        <small data-key="timeline4Desc">Achieved industry leadership</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label" data-key="stat1">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label" data-key="stat2">Client Trust</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3k+</div>
+                <div class="stat-label" data-key="stat3">Products</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label" data-key="stat4">Client Satisfaction</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="productsTitle">Product Highlights</h2>
+                <p data-key="productsSubtitle">Comprehensive range of industrial and automotive solutions</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="automotives.jpeg" alt="Automotive Parts" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/aaaaaa?text=Image+Not+Found';">
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product1Title">Automotive Parts</h3>
+                        <p><b data-key="productExample">Some Examples:</b></p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i><span data-key="product1Point1">Engine Components</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product1Point2">Transmission Systems</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product1Point3">Brake Assemblies</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product1Point4">Electrical Systems</span></li>
+                        </ul>
+                        <a href="#contact">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                <span data-key="productBtnOrder">Order Now</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="MaintenanceTools.jpg" alt="Maintenance Equipment" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/aaaaaa?text=Image+Not+Found';">
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product2Title">Maintenance Equipment</h3>
+                        <p><b data-key="productExample">Some Examples:</b></p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i><span data-key="product2Point1">Diagnostic and Calibration Tools</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product2Point2">Socket Sets and Ratchets</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product2Point3">Pliers and Cutting Tools</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product2Point4">Wrenches, Hammers, Screwdrivers</span></li>
+                        </ul>
+                        <a href="#contact">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                <span data-key="productBtnOrder">Order Now</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="IndustrialMachinery.jpg" alt="Industrial Machinery" onerror="this.onerror=null; this.src='https://placehold.co/600x400/eeeeee/aaaaaa?text=Image+Not+Found';">
+                    </div>
+                    <div class="product-content">
+                        <h3 data-key="product3Title">Industrial Machinery</h3>
+                        <p><b data-key="productExample">Some Examples:</b></p>
+                        <ul class="product-features">
+                            <li><i class="fas fa-check"></i><span data-key="product3Point1">Heavy Equipment Parts</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product3Point2">Manufacturing Tools</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product3Point3">Precision Components</span></li>
+                            <li><i class="fas fa-check"></i><span data-key="product3Point4">Automation Systems</span></li>
+                        </ul>
+                        <a href="#contact">
+                            <button class="btn btn-primary">
+                                <i class="fas fa-arrow-right"></i>
+                                <span data-key="productBtnOrder">Order Now</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 data-key="contactTitle">Contact Us</h2>
+                <p data-key="contactSubtitle">Get in touch and discover how we can work together</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 data-key="contactAddress">Address</h4>
+                            <p>Turkey<br>İkitelli OSB MAH.<br>Istanbul</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h4 data-key="contactPhone">Phone</h4>
+                            <p>+90 212 671 31 33</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 data-key="contactEmail">Email</h4>
+                            <p>tradeatimpexglobal@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name" data-key="formName">Full Name</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-key="formEmail">Email Address</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-key="formSubject">Subject</label>
+                        <input type="text" id="subject" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-key="formMessage">Message</label>
+                        <textarea id="message" class="form-control" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span data-key="formBtnSend">Send Message</span>
+                        <span class="loading" style="display: none;"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toast Notification (Initially Hidden) -->
+    <div class="toast success" id="successToast"> <!-- Added inline style -->
+        <i class="fas fa-check-circle"></i>
+        <span data-key="toastSuccess">Message sent successfully!</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4 data-key="footerAbout">About IMPEX GLOBAL</h4>
+                <p data-key="footerAboutDesc">Leading provider of industrial and automotive solutions with a global presence and commitment to excellence. We serve customers worldwide with premium quality products and exceptional service.</p>
+            </div>
+            <div class="footer-col">
+                <h4 data-key="footerLinks">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> <span data-key="navHome">Home</span></a></li>
+                    <li><a href="#features"><i class="fas fa-chevron-right"></i> <span data-key="navFeatures">Features</span></a></li>
+                    <li><a href="#vision-mission"><i class="fas fa-chevron-right"></i> <span data-key="navVisionMission">Vision & Mission</span></a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> <span data-key="navProducts">Products</span></a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> <span data-key="navContact">Contact Us</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-key="footerProducts">Products</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-cog"></i> <span data-key="product1Title">Automotive Parts</span></a></li>
+                    <li><a href="#"><i class="fas fa-industry"></i> <span data-key="product3Title">Industrial Machinery</span></a></li>
+                    <li><a href="#"><i class="fas fa-tools"></i> <span data-key="product2Title">Maintenance Equipment</span></a></li>
+                    <li><a href="#"><i class="fas fa-cube"></i> <span data-key="footerCustom">Custom Solutions</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 data-key="footerContact">Contact Us</h4>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> impexglobal2024@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> İkitelli</li>
+                    <li><i class="fas fa-building"></i> Istanbul, İkitelli</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-key="footerRights">&copy; 2024 IMPEX GLOBAL. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS (Consider moving this key to a config or environment variable in a real app)
+        (function() {
+            emailjs.init("F8QK8Fv1V8Mm7iP9h"); 
+        })();
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
